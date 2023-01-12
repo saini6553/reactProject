@@ -50,7 +50,7 @@ const About = () => {
         </label>
         <br />
         <label>
-          Age:
+          Age: 
           <input
             type="text"
             value={age}
