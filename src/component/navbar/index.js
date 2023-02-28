@@ -19,7 +19,7 @@ return (
 			About
 		</NavLink>
 		<NavLink to='/events' activeStyle>
-			Events
+		Event Form
 		</NavLink>
 		<NavLink to='/annual' activeStyle>
 			Annual Report
@@ -32,6 +32,9 @@ return (
 		</NavLink>
 		<NavLink to='/sign-up' activeStyle>
 			Sign Up
+		</NavLink>
+		<NavLink to='chatComponent' activeStyle>			
+		Chat Component
 		</NavLink>
 		{/* Second Nav */}
 		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
