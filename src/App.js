@@ -9,6 +9,7 @@ import AnnualReport from './pages/annual';
 import Teams from './pages/team';
 import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
+import ChatComponent from './pages/chatComponent';
 
 
 function App() {
@@ -23,6 +24,7 @@ return (
 		<Route path='/team' element={<Teams />} />
 		<Route path='/blogs' element={<Blogs />} />
 		<Route path='/sign-up' element={<SignUp />} />
+		<Route path='/chatComponent' element={<ChatComponent/>}/>
 	</Routes>
 	</Router>
 );

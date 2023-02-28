@@ -157,6 +157,7 @@ class Home extends React.Component {
     return (
       <div className="App">
         <h1> Fetch data from an api in react </h1>{" "}
+        <h2>https://codesandbox.io/s/react-hooks-usestate-example-forked-sn1gbv?file=/src/hook-useState-example.jsx</h2>
         <div className="col-lg "></div>
         <table>
           <thead></thead>
@@ -220,7 +221,7 @@ class Home extends React.Component {
         <button type="button" onClick={(e) => this.submitData()}>
           Submit
         </button>
-        <FunctioBaseDemo />
+        <FunctioBaseDemo sendProps={this.state.formData.lastName} />
       </div>
     );
   }
