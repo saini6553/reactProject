@@ -7,6 +7,7 @@ import HookUseStateExample from "./formDataFunct";
 const About = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [submitMsg, setSubmitMsg] = useState("");
   const [age, setAge] = useState(0);
   const [lastNamePost ,  setlastNamePost] = useState("");
 	function postDataToChild(e){ 
@@ -17,6 +18,24 @@ const About = () => {
 
 	console.log("lastNamePost=>",Date.now(),lastNamePost);
 	}
+  function postData(){
+    fetch('http://localhost:3030/userid/86879/pasword/koil')
+  .then(response => 
+    {
+      debugger
+      response.json()})
+  .then(commits =>
+   { 
+    debugger
+    console.log(commits);
+  })
+
+
+
+
+  }
+
+
   return (
     <div
       style={{
@@ -58,7 +77,9 @@ const About = () => {
           />
         </label>
         <br />
-        <input type="submit" value="Submit" />
+        <input type="button" onClick={postData} value="Submit" />
+        {submitMsg}
+
       </form>
       <br />
       <div className="row">

@@ -15,11 +15,14 @@ return (
 		<Bars />
 
 		<NavMenu>
+		<NavLink to='/' activeStyle>
+			Home
+		</NavLink>
 		<NavLink to='/about' activeStyle>
 			About
 		</NavLink>
 		<NavLink to='/events' activeStyle>
-		Event Form
+			Events
 		</NavLink>
 		<NavLink to='/annual' activeStyle>
 			Annual Report
@@ -32,9 +35,6 @@ return (
 		</NavLink>
 		<NavLink to='/sign-up' activeStyle>
 			Sign Up
-		</NavLink>
-		<NavLink to='chatComponent' activeStyle>			
-		Chat Component
 		</NavLink>
 		{/* Second Nav */}
 		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
